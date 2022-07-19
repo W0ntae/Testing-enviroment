@@ -9,13 +9,13 @@ public class MatrixReset0 {
     findZero(matrix);
     for (int row = 0; row < matrix.length; row++) {
       for (int colnum = 0; colnum < matrix[row].length; colnum++)
-        if (zeroLoc.get(row) != null) {
-          matrix[row][colnum] = 0;
-          int colnumber = zeroLoc.get(row);
-          for (int rownum = 0; rownum < matrix.length; rownum++) {
-            matrix[rownum][colnumber] = 0;
-          }
+      if (zeroLoc.get(row) != null) {
+        matrix[row][colnum] = 0;
+        int colnumber = zeroLoc.get(row);
+        for (int rownum = 0; rownum < matrix.length; rownum++) {
+          matrix[rownum][colnumber] = 0;
         }
+      }
     }
     return;
   }
